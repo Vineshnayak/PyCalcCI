@@ -5,7 +5,8 @@ pipeline {
 
         stage('Checkout Code') {
             steps {
-                git 'https://github.com/Vineshnayak/PyCalcCI.git'
+                git branch: 'main',
+                url: 'https://github.com/Vineshnayak/PyCalcCI.git'
             }
         }
 
